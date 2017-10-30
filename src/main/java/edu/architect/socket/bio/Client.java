@@ -8,8 +8,8 @@ import java.net.Socket;
 
 public class Client {
 
-	final static String ADDRESS = "127.0.0.1";
-	final static int PORT = 8765;
+	private final static String ADDRESS = "127.0.0.1";
+	private final static int PORT = 8765;
 	
 	public static void main(String[] args) {
 		

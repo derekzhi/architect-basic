@@ -2,10 +2,16 @@ package edu.architect.thread.concurrent;
 
 import java.util.concurrent.CountDownLatch;
 
+/**
+ * 一个或多个线程等待其他线程完成操作
+ * @author Frey Zhi
+ *
+ */
 public class UseCountDownLatch {
 
 	public static void main(String[] args) {
 		
+		//参数2表示需要2个线程发出countDown
 		final CountDownLatch countDown = new CountDownLatch(2);
 		
 		Thread t1 = new Thread(new Runnable() {
